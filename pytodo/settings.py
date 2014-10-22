@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pytodo.apps.account',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -52,7 +53,10 @@ ROOT_URLCONF = 'pytodo.urls'
 
 WSGI_APPLICATION = 'pytodo.wsgi.application'
 
-
+TEMPLATE_DIRS = (
+            'templates',
+            'templatetag'
+        )
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 

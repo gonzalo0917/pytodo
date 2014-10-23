@@ -19,3 +19,9 @@ def profile(request):
             'user': 'Gonzalo'
             }
     return render_to_response('account/profile.html', args)
+
+def holas(request):
+    args = {
+            'user':'Gonzalo'
+            }
+    return render_to_response('account/profile.html', args)
